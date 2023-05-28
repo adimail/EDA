@@ -14,3 +14,18 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
+train_data = pd.read_csv("train.csv")
+test_data = pd.read_csv("test.csv")
+
+train_data.info()
+test_data.info()
+
+train_data.drop(["Cabin"], axis=1, inplace=True)
+test_data.drop(["Cabin"], axis=1, inplace=True)
+
+#Survived
+# sns.countplot(train_data.Survived)
+# plt.show()
+
+sns.countplot(train_data.Pclass)
+plt.show()
