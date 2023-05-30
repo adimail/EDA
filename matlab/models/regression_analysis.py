@@ -1,20 +1,9 @@
-# Kaggle Competition Titanic Machine Learning From Disaster.
-# A Predictive Model based on Gender, and Class
-# AstroDave Remake by AGC
-
 import csv as csv
 import numpy as np
 
-
-# Load in the train.csv file
-# The  'rb' allows for reading only privileges. 
 csv_file_object = csv.reader(open('train.csv', 'rb')) 
 
-# Skip the fist line of the file because it is a header.
-# We only want the data in the file for analysis. 
 header = csv_file_object.next() 
-
-# Create a bin to store our data
 data = [] 
 
 # Skip through each row in the csv file
