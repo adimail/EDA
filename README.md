@@ -1,1 +1,1 @@
-# surviving-titanic
+# EDA
